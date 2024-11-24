@@ -7,7 +7,6 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         double sumCredit = 0;
-        double sumGrade = 0;
         double sum = 0;
 
         for(int i = 0; i < 20; i++) {
@@ -23,7 +22,6 @@ public class Main {
             sumCredit += credit;
             score = gradeToScore(grade);
             sum = sum + (credit * score);
-            sumGrade += score;
         }
         bw.write((sum / sumCredit) + "\n");
         bw.close();
